@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -35,10 +35,15 @@ requirements:
     - Shapely
     - lxml
     - dataclasses
-
+    - slepc <3.17
+    - slepc4py <3.17
+    - petsc <3.17
+    - petsc4py <3.17
 test:
   imports:
     - fish2eod
+  requires:
+    - openssh
 
 
 about:
