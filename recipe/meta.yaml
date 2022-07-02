@@ -35,10 +35,10 @@ requirements:
     - Shapely
     - lxml
     - dataclasses
-    - slepc<3.17
-    - slepc4py<3.17
-    - petsc<3.17
-    - petsc4py<3.17
+    - slepc <3.17
+    - slepc4py <3.17
+    - petsc <3.17
+    - petsc4py <3.17
 test:
   imports:
     - fish2eod
